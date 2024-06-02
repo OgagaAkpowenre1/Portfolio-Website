@@ -1,5 +1,5 @@
 section {
-  min-height: 90vh;
+  min-height: 70vh;
   min-width: 90vw;
 }
 
@@ -19,6 +19,12 @@ li > a {
 
 .fab{
     font-size: 50px;
+}
+
+/* Intro styles */
+
+#top-section{
+  min-height: 50vh;
 }
 
 .text-box {
@@ -107,6 +113,9 @@ span {
 @media screen and (max-width: 600px) {
   .carousel{
     height: 500px !important;
+  }
+  span{
+    font-size: 60px;
   }
 }
 
