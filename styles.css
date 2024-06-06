@@ -1,3 +1,10 @@
+*{
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1.5px;
+  font-family: 'Kanit', sans-serif;
+}
+
 section {
   min-height: 70vh;
   min-width: 90vw;
@@ -52,7 +59,7 @@ h4 {
 }
 
 span {
-  font-size: 72px;
+  font-size: 60px;
   background: -webkit-linear-gradient(#eee, #333);
   background-clip: text;
   -webkit-background-clip: text;
@@ -70,6 +77,27 @@ span {
   to {
     opacity: 1;
   }
+}
+
+.language{
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+}
+
+.language > img{
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  transition: all 0.5s ease-in;
+  animation: jump 8s;
+}
+
+
+.language > img:hover{
+  /* width: 70px;
+  height: 70px; */
+  transform: rotate(3600deg);
 }
 
 .container > h3{
@@ -111,36 +139,54 @@ span {
 
 /* SCREEN STYLING */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) and (min-width: 600px) {
   section{
     min-height: 50vh;
     min-width: 80vw;
   }
   .carousel{
-    height: 500px !important;
+    height: 350px !important;
   }
   span{
     font-size: 60px;
   }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 992px) {
+  .carousel{
+    height: 400px !important;
+  }
+}
+
+/* @media screen and (max-width: 1368px) {
+  .carousel{
+    height: 500px !important;
+  }
+} */
+
+/* @media screen and (width: 850px) {
   .carousel{
     height: 500px !important;
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (width: 820px) {
+  .carousel{
+    height: 600px !important;
+  }
+}
+
+@media screen and (width: 360px) {
   .carousel{
     height: 300px !important;
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (width: 1024px) {
   .carousel{
-    height: 400px !important;
+    height: 500px !important;
   }
-}
+} */
 
 .row .col.s6{
   margin: 30px auto;
