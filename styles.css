@@ -6,11 +6,11 @@
 }
 
 body{
-  background-color: #00B4D8;
+  background-color: #023E8A;
 }
 
 h1,h2,h3,h4,h5,h6,p{
-  color: #fff;
+  color: #00BBF9;
 }
 
 section {
@@ -34,7 +34,7 @@ li > a {
 
 .fab{
     font-size: 50px;
-    color: #fff;
+    color: #48CAE4 ;
 }
 
 /* Intro styles */
@@ -68,7 +68,7 @@ h4 {
 
 span {
   font-size: 60px;
-  background: -webkit-linear-gradient(#03045E , #0077B6);
+  background: -webkit-linear-gradient(#00B4D8 , #0096C7 );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
