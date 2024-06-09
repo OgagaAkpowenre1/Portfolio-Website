@@ -27,17 +27,17 @@
     />
     <title>Ogaga's Portfolio</title>
   </head>
-  <body>
+  <body class="black">
     <!-- FIRST SECTION -->
     <section id="top-section">
       <div class="container">
         <div class="text-box">
-          <h4 class=">Hello.</h4>
-          <h3 class=">My name is</h3>
+          <h4 class="white-text">Hello.</h4>
+          <h3 class="white-text">My name is</h3>
           <span>Akpowenre Ogaga</span>
-          <h5 class=">And I am a Front-end Web Developer.</h5>
+          <h5 class="white-text">And I am a Front-end Web Developer.</h5>
         </div>
-        <div class=">
+        <div class="white-text">
           <h5>
             I'm a self-taught web developer who has been designing and building
             websites since 2022.
@@ -73,11 +73,11 @@
         <!-- SMALL SCREENS -->
 
         <div class="container black hide-on-med-and-up">
-          <h3 class=">
+          <h3 class="white-text">
             Feel free to check out any of my projects below.
           </h3>
 
-          <div class="carousel carousel-slider">
+          <!-- <div class="carousel carousel-slider">
             <a
               href="https://themed-dashboard.vercel.app/"
               target="_blank"
@@ -141,88 +141,54 @@
                 </div>
               </div>
             </a>
-          </div>
+          </div> -->
         </div>
       </div>
 
       <!-- LARGE AND MED SCREENS  -->
+      <div class="container">
+        <h4 class="white-text center-align">Here are a few of my projects. Check em out</h4>
+        <div class="project-container">
 
-      <div class="container hide-on-small-only">
-        <h5 class="white-text center-align">
-          Feel free to check out any of my projects below.
-        </h5>
-        <div class="carousel carousel-slider">
-          <a
-            href="https://themed-dashboard.vercel.app/"
-            target="_blank"
-            class="carousel-item"
-          >
             <div class="project">
-              <div class="img-area">
-                <img src="./project-images/dashboard.png" />
-              </div>
-              <div class="text-area">
-                <h4>A Themed Dashboard</h4>
-                <p>Built with React, Tailwind CSS and Sparkfusion</p>
-              </div>
+                <img src="/project-images/tenzies.png" alt="">
+                <div class="info">
+                    <h5>Tenzies</h5>
+                    <p>Built with React</p>
+                    <a href="#"><p>Check it out</p></a>
+                </div>
             </div>
-          </a>
 
-          <a
-            href="https://expense-tracker-blush-one.vercel.app/"
-            target="_blank"
-            class="carousel-item"
-          >
             <div class="project">
-              <div class="img-area">
-                <img src="./project-images/expense-tracker.png" />
-              </div>
-              <div class="text-area">
-                <h4>An Expense Tracker</h4>
-                <p>Built with React</p>
-              </div>
+                <img src="/project-images/tenzies.png" alt="">
+                <div class="info">
+                    <h5>Tenzies</h5>
+                    <p>Built with React</p>
+                    <a href="#"><p>Check it out</p></a>
+                </div>
             </div>
-          </a>
 
-          <a
-            href="https://weatherappbranch.vercel.app/"
-            target="_blank"
-            class="carousel-item"
-          >
             <div class="project">
-              <div class="img-area">
-                <img src="./project-images/weather-app.png" />
-              </div>
-              <div class="text-area">
-                <h4>A Weather App</h4>
-                <p>Built with React</p>
-              </div>
+                <img src="/project-images/tenzies.png" alt="">
+                <div class="info">
+                    <h5>Tenzies</h5>
+                    <p>Built with React</p>
+                    <a href="#"><p>Check it out</p></a>
+                </div>
             </div>
-          </a>
 
-          <a
-            href="https://tenzies-three-rust.vercel.app/"
-            target="_blank"
-            class="carousel-item"
-          >
-            <div class="project">
-              <div class="img-area">
-                <img src="./project-images/tenzies.png" />
-              </div>
-              <div class="text-area">
-                <h4>Tenzies Game</h4>
-                <p>Built with React</p>
-              </div>
-            </div>
-          </a>
         </div>
+
       </div>
+      
+
+        
     </section>
 
     <!-- FOURTH SECTION -->
     <section id="contact" class="scrollspy">
       <div class="container">
-        <h5 class="center-align">
+        <h5 class="center-align white-text">
           Like what you see? Reach out to me on
         </h5>
         <div class="grid">
@@ -250,6 +216,7 @@
     <script>
       $(document).ready(function () {
         $(".sidenav").sidenav();
+        $(".materialboxed").materialbox();
         $(".carousel").carousel({
           indicators: true,
           fullWidth: true,

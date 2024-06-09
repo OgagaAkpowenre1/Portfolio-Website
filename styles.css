@@ -5,6 +5,14 @@
   font-family: 'Kanit', sans-serif;
 }
 
+body{
+  background-color: #00B4D8;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+  color: #fff;
+}
+
 section {
   min-height: 70vh;
   min-width: 90vw;
@@ -26,6 +34,7 @@ li > a {
 
 .fab{
     font-size: 50px;
+    color: #fff;
 }
 
 /* Intro styles */
@@ -46,7 +55,6 @@ h3{
 
 h5{
     font-size: 12px;
-
     animation: fadeIn 8s;
     animation-delay: 0s;
     animation-fill-mode: forwards;
@@ -60,7 +68,7 @@ h4 {
 
 span {
   font-size: 60px;
-  background: -webkit-linear-gradient(#eee, #333);
+  background: -webkit-linear-gradient(#03045E , #0077B6);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -104,11 +112,11 @@ span {
 }
 
 .carousel{
-  height: 600px !important;
+  height: 650px !important;
 }
 
 .project {
-  border: 2px solid black;
+  border: 2px solid transparent;
   margin: 0px;
 }
 .img-area {
@@ -132,13 +140,13 @@ span {
   text-align: center;
   margin: 0px;
 }
-.text-area > h4, p{
-  color: #fff;
-}
+/* .text-area > h4, p{
+  color: ;
+} */
 
 /* SCREEN STYLING */
 
-@media screen and (max-width: 900px) and (min-width: 600px) {
+@media screen and (max-width:900px) and (min-width: 600px) {
   section{
     min-height: 50vh;
     min-width: 80vw;
@@ -148,6 +156,10 @@ span {
   }
   span{
     font-size: 60px;
+  }
+  .project > img{
+    max-height: 150px;
+    max-width: 300px;
   }
 }
 
@@ -190,3 +202,40 @@ span {
 .row .col.s6{
   margin: auto;
 }
+
+.responsive-img{
+  height: 400px;
+  width: 400px;
+}
+
+.project-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.project{
+  
+  margin: 30px auto;
+  text-align: center;
+}
+
+.project > img{
+  max-height: 250px;
+  max-width: 500px;
+}
+
+.project > .info{
+  padding: 0;
+}
+
+.project > .info > h5{
+  font-size: 30px;
+  
+}
+
+.project > .info > p{
+  font-size: 15px;
+}
+
