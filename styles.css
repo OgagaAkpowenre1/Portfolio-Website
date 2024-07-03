@@ -50,6 +50,8 @@
 
 #languages-section h3 {
   font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 60px;
 }
 
 #languages-section ul li:first-child {
@@ -58,13 +60,20 @@
 
 #languages-section ul li {
   display: flex;
-  margin: 30px 0;
+  margin: 60px 0;
   align-items: center;
+  justify-content: center;
+}
+
+#languages-section ul li:hover {
+  transition: justify-content 2s ease;
+  
 }
 
 #languages-section ul li h5 {
   font-size: 1.4em;
-  font-weight: 300;
+  font-weight: 600;
+  justify-content: space-between;
 }
 
 #languages-section ul li img {
