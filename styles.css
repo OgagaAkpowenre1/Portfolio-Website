@@ -1,18 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Ga+Maamli&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lexend+Deca:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 * {
   margin: 0;
   padding: 0;
+
+}
+
+#languages-section, #projects-section, #contact-section, #footer-section {
   font-family: "Dosis", Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #intro-section {
   padding: 13% 100px;
   letter-spacing: 2px;
-  background: linear-gradient(to bottom, #caf0f8 0%, #ade8f4 20%, #90e0ef 70%);
+  background: black;
   min-height: 60vh;
   text-align: center;
   max-width: 100vw;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 800;
 }
 
 #intro-section h1 {
@@ -28,7 +35,7 @@
   color: #3f37c9;
 }
 
-#intro-section .greeting-container span::before {
+/* #intro-section .greeting-container span::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -38,16 +45,17 @@
   background-color: #a7e6f3;
   border-left: 3px solid #4070f4;
   animation: typewrite 4s steps(12) infinite;
-}
+} */
 
 #intro-section .name-container .text {
   position: relative;
   margin: 50px 0;
   color: #3a0ca3;
   overflow: hidden;
+  width: 100%;
 }
 
-#intro-section .name-container span::before {
+/* #intro-section .name-container span::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -57,7 +65,7 @@
   background-color: #a1e8f5;
   border-left: 3px solid #4070f4;
   animation: typewrite 6s steps(50) infinite;
-}
+} */
 
 #intro-section h2 {
   font-size: 3em;
@@ -82,7 +90,6 @@
   }
 }
 
-
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -95,7 +102,8 @@
 #languages-section {
   padding: 5% 6% 2% 6%;
   min-height: 70vh;
-  background: linear-gradient(to bottom, #90e0ef 5%, #48cae4 60%, #62cde2 90%);
+  background: black;
+  color: #fff;
 }
 
 #languages-section h3 {
