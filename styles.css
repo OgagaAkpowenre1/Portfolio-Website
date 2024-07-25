@@ -4,98 +4,93 @@
 * {
   margin: 0;
   padding: 0;
-
 }
 
-#languages-section, #projects-section, #contact-section, #footer-section {
+#languages-section,
+#projects-section,
+#contact-section,
+#footer-section {
   font-family: "Dosis", Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #intro-section {
   padding: 13% 100px;
   letter-spacing: 2px;
-  background: black;
+  background: url("./laptop-images/code4.jpg");
+  background-position: center;
+  background-size: cover;
   min-height: 60vh;
   text-align: center;
   max-width: 100vw;
   font-family: "IBM Plex Mono", monospace;
   font-weight: 800;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; */
 }
 
 #intro-section h1 {
   margin-bottom: 20px;
   font-size: 2.5em;
-  color: #3f37c9;
+  color: #000;
 }
-
-#intro-section .greeting-container .text {
-  position: relative;
-  margin-bottom: 20px;
-  font-size: 2.5em;
-  color: #3f37c9;
-}
-
-/* #intro-section .greeting-container span::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #a7e6f3;
-  border-left: 3px solid #4070f4;
-  animation: typewrite 4s steps(12) infinite;
-} */
-
-#intro-section .name-container .text {
-  position: relative;
-  margin: 50px 0;
-  color: #3a0ca3;
-  overflow: hidden;
-  width: 100%;
-}
-
-/* #intro-section .name-container span::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #a1e8f5;
-  border-left: 3px solid #4070f4;
-  animation: typewrite 6s steps(50) infinite;
-} */
 
 #intro-section h2 {
   font-size: 3em;
   margin: 50px 0;
-  color: #3a0ca3;
+  color: #000;
 }
 
 #intro-section h3 {
   font-size: 1.5em;
   margin-bottom: 20px;
-  color: #4361ee;
+  color: #000;
   animation: fadeIn 10s;
 }
 
-@keyframes typewrite {
-  40%,
-  60% {
-    left: calc(100% + 4px);
-  }
-  100% {
-    left: 0%;
-  }
+#intro-section .typewriter {
+  width: fit-content;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#intro-section .typewriter h1 {
+  overflow: hidden;
+  border-right: 0.15em solid;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing 1.5s steps(10, end), blink-caret 0.75s step-end infinite;
+}
+
+#intro-section .typewriter h2 {
+  overflow: hidden;
+  border-right: 0.15em solid;
+  white-space: nowrap;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #000; }
 }
 
 @keyframes fadeIn {
-  0% {
+  from {
     opacity: 0;
   }
-  100% {
-    opacity: 100%;
+  to {
+    opacity: 1;
   }
 }
 
@@ -214,9 +209,32 @@
   padding-bottom: 15px;
 }
 
-@media (max-width: 415px) {
+@media (max-width: 600px) {
   #intro-section {
     min-height: 100vh;
+  }
+
+  #intro-section .greeting-container,
+  #intro-section .name-container {
+    white-space: normal; /* Allow text to wrap */
+    border: none; /* Remove the border on smaller screens */
+    width: 100%; /* Ensure it fits the container */
+    display: inline; /* Avoid stretching issues */
+  }
+
+#intro-section .typewriter h1 {
+    white-space: normal;
+  }
+
+#intro-section .typewriter h2 {
+    white-space: normal;
+  }
+
+  
+  #intro-section .greeting-container::after,
+  #intro-section .name-container::after {
+    content: "|";
+    animation: blink-caret 0.75s step-end infinite;
   }
 
   #contact-section .contact-grid {

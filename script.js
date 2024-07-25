@@ -45,7 +45,7 @@
 
 
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-const names = ["Akpowenre Ogaga", "Ogaga Akpowenre", "Ogaga A.", "A. Ogaga", "John Doe", "Jane Smith"];
+const names = ["Akpowenre Ogaga", "Ogaga Akpowenre", "Ogaga A.", "A. Ogaga", "John Doe", "Jane Smith", "Kevwe Grace Akpowenre"];
 
 function hackerEffect(element) {
   let iterations = 0;
