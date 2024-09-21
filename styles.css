@@ -227,6 +227,11 @@
   text-decoration: none;
 }
 
+#contact-section .contact-grid a .indeed-text {
+  font-size: 0.8em;
+  color: var(--secondaryColor);
+}
+
 #footer-section {
   background: var(--primaryColor);
   text-align: center;
@@ -267,6 +272,7 @@
     display: inline; 
   }
 
+
 #intro-section .typewriter h1 {
     animation: none;
     border-right: none;
@@ -278,6 +284,8 @@
     animation: none;
     border-right: none;
     overflow: initial;
+    font-size: 2.5em;
+    text-align: -webkit-match-parent;
   }
 
   #contact-section .contact-grid {
